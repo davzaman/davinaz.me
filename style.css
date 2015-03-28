@@ -1,15 +1,48 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.sun-container {
+	position: fixed;
+	z-index: 100;
+	margin: 10px 0 0 10px;
+}
+
 #sun {
 	height:200px;
 	width: 200px;
-	margin-top: 15px;
-	margin-left: 15px;
-	background-color: #FF9F39;
+	background-image: url("my-face.JPG");
+	background-size: cover;
 	border-radius: 100%;
-	border-color: white;
-	border-width: 10px;
+	border: 7px solid;
+	border-color: #E3754A;
+}
+
+.container {
+	text-align: center;
+	display: block;
 }
 
 header {
-	background-color: rgba(2,3,4,1);
-	margin:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(2,3,4,.4);
+	position: relative;
+}
+
+header h1 {
+	padding: 190px 0 0 0;
+	font-size: 5em;
+	margin: 0;
+}
+
+h1 {
+	font-size: 5em;
+	padding-top: 50px;
+	margin: 0;
+}
+
+#projects {
+	background-color: #E3BB92;
 }
