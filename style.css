@@ -33,7 +33,7 @@ body {
 }
 
 #header {
-	background-image: url("about-me-bg.png");
+	background-image: url("header-bg.jpeg");
 	background-size: cover;
 	background-attachment: fixed;
 	background-color: rgba(2,3,4,.4);
@@ -49,7 +49,6 @@ p {
 	font-family: 'Lora', serif;
 	color: white;
 	margin: 0;
-	padding: 5px;
 }
 
 #header p {
@@ -64,6 +63,10 @@ h1 {
 	font-family: 'Montserrat', sans-serif;
 	color: white;
 	text-shadow: -1px 2px black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h2 {
+	font-family: 'Codystar', cursive;
 }
 
 .container > hr {
