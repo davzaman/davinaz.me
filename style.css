@@ -20,14 +20,18 @@ body {
 }
 
 .slide {
-	text-align: center;
-	display: block;
+	text-align: right;
+	position: relative;
 }
 
 .container {
-	margin: 0 auto;
-	max-width: 50%;
+	margin: 0;
+	height: 100%;
+	max-width: 73%;
+	padding: 0 30px 0 0;
+	display: inline-block;
 }
+
 #header {
 	background-color: rgba(2,3,4,.4);
 	padding-bottom: 50px;
@@ -42,10 +46,14 @@ body {
 p {
 	font-family: 'Lora', serif;
 	color: white;
-	font-size: 2em;
+}
+
+#header p {
+	font-size: 1.5em;
 }
 
 h1 {
+	width: 100%;
 	font-size: 5em;
 	padding-top: 50px;
 	margin: 0;
@@ -58,20 +66,19 @@ h1 {
 	background: rgba(255,255,255,0.2) no-repeat scroll center;
 	width: 50%;
 	height: 2px;
+	margin-right: 0;
 }
+
 
 #projects {
 	background-color: #E3BB92;
 }
 .project1 {
 	display: inline-block;
-	float: left;
 }
 .project2 {
 	display: inline-block;
-	margin: 0 auto;
 }
 .project3 {
 	display: inline-block;
-	float: right;
 }
