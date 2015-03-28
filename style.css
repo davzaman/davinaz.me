@@ -27,8 +27,8 @@ body {
 .container {
 	margin: 0;
 	height: 100%;
-	max-width: 73%;
-	padding: 0 30px 0 0;
+	width: 950px;
+	padding: 0 30px 50px 0;
 	display: inline-block;
 }
 
@@ -37,7 +37,6 @@ body {
 	background-size: cover;
 	background-attachment: fixed;
 	background-color: rgba(2,3,4,.4);
-	padding-bottom: 50px;
 }
 
 #header h1 {
@@ -78,14 +77,10 @@ h1 {
 #projects {
 	background-color: #E3BB92;
 }
-.project1 {
-	display: inline-block;
-}
-.project2 {
-	display: inline-block;
-}
-.project3 {
-	display: inline-block;
+
+table {
+	width: 100%;
+	text-align: center;
 }
 
 #contact-me{
