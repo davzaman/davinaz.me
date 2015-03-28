@@ -26,11 +26,10 @@ body {
 
 .container {
 	margin: 0 auto;
-	max-width: 75%;
+	max-width: 50%;
 }
 #header {
 	background-color: rgba(2,3,4,.4);
-	position: relative;
 	padding-bottom: 50px;
 }
 
@@ -40,8 +39,10 @@ body {
 	margin: 0;
 }
 
-#header p {
-
+p {
+	font-family: 'Lora', serif;
+	color: white;
+	font-size: 2em;
 }
 
 h1 {
@@ -62,7 +63,15 @@ h1 {
 #projects {
 	background-color: #E3BB92;
 }
-.project {
+.project1 {
 	display: inline-block;
-	
+	float: left;
+}
+.project2 {
+	display: inline-block;
+	margin: 0 auto;
+}
+.project3 {
+	display: inline-block;
+	float: right;
 }
