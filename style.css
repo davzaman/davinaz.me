@@ -19,30 +19,50 @@ body {
 	border-color: #E3754A;
 }
 
-.container {
+.slide {
 	text-align: center;
 	display: block;
 }
 
-header {
-	width: 100%;
-	height: 100%;
+.container {
+	margin: 0 auto;
+	max-width: 75%;
+}
+#header {
 	background-color: rgba(2,3,4,.4);
 	position: relative;
+	padding-bottom: 50px;
 }
 
-header h1 {
+#header h1 {
 	padding: 190px 0 0 0;
 	font-size: 5em;
 	margin: 0;
+}
+
+#header p {
+
 }
 
 h1 {
 	font-size: 5em;
 	padding-top: 50px;
 	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	text-shadow: -1px 2px black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.container > hr {
+	background: rgba(255,255,255,0.2) no-repeat scroll center;
+	width: 50%;
+	height: 2px;
 }
 
 #projects {
 	background-color: #E3BB92;
+}
+.project {
+	display: inline-block;
+	
 }
