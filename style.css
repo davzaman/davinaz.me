@@ -33,7 +33,7 @@ body {
 }
 
 #header {
-	background-image: url("header-bg.jpeg");
+	background-image: url("header-bg.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 	background-color: rgba(2,3,4,.4);
@@ -80,7 +80,23 @@ h2 {
 
 
 #projects {
-	background-color: #E3BB92;
+		/*background-color: rgba(255,255,255);
+		background-image: url("projects: ;-bg.jpg");
+		background-size: cover;
+		background-attachment: fixed;*/
+	/*background: -webkit-linear-gradient(rgba(87,109,112,1), rgba(207,255,234,.4));
+	background: -moz-linear-gradient(rgba(87,109,112,1), rgba(207,255,234,.4));
+	background: -o-linear-gradient(rgba(87,109,112,1), rgba(207,255,234,.4));
+	background: linear-gradient(rgba(87,109,112,1), rgba(207,255,234,.4));*/
+	background: -webkit-linear-gradient(rgba(59,68,67,1), rgba(59,68,67,.4));
+	background: -moz-linear-gradient(rgba(59,68,67,1), rgba(59,68,67,.4));
+	background: -o-linear-gradient(rgba(59,68,67,1), rgba(59,68,67,.4));
+	background: linear-gradient(rgba(59,68,67,1)#C9C1AC, rgba(59,68,67,.7));
+}	
+
+#projects p {
+	/*color: black;*/
+	font-size: 1.125em;
 }
 
 table {
@@ -90,7 +106,11 @@ table {
 
 #contact-me{
 	background-color: rgba(2,3,4,.4);
-	background-image: url("MalibuBreak.jpg");
-	background-size: contain;
+	background-image: url("contact-bg.jpg");
+	background-size: cover;
 	background-attachment: fixed;
+}
+
+#contact-me p {
+	font-size: 1.5em;
 }
