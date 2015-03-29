@@ -8,18 +8,30 @@ body {
 	position: relative;
 	float: right;
 	z-index: 100;
-	margin: 10px 225px 0 0;
+	margin: 25px 225px 0 0;
 }
 
+.nav-container {
+	position: relative;
+	float: right;
+	z-index: 50;
+}
+
+#nav {
+	position: fixed;
+	margin-left: 40px;
+	height: 100%;
+	background: rgba(255,255,255,1);
+}
 #sun {
 	position: fixed;
-	height:200px;
-	width: 200px;
+	height: 150px;
+	width: 150px;
 	background-image: url("my-face.JPG");
 	background-size: cover;
 	border-radius: 100%;
 	border: 7px solid;
-	border-color: #E3754A;
+	border-color: #CD7D39;
 }
 
 .slide {
@@ -30,12 +42,12 @@ body {
 	margin: 0;
 	height: 100%;
 	width: 950px;
-	padding: 0 0 50px 30px;
+	padding: 0 0 30px 50px;
 	display: inline-block;
 }
 
 #header {
-	background-image: url("header-bg.jpg");
+	background-image: url("header-bg.jpeg");
 	background-size: cover;
 	background-attachment: fixed;
 	background-color: rgba(2,3,4,.4);
@@ -58,7 +70,6 @@ p {
 }
 
 h1 {
-	text-align: center;
 	width: 100%;
 	font-size: 4em;
 	padding-top: 50px;
@@ -76,6 +87,7 @@ h2 {
 
 .container > hr {
 	background: rgba(255,255,255,0.2) no-repeat scroll center;
+	margin-left: 0;
 	width: 50%;
 	height: 2px;
 }
@@ -86,14 +98,10 @@ h2 {
 		background-image: url("projects: ;-bg.jpg");
 		background-size: cover;
 		background-attachment: fixed;*/
-	/*background: -webkit-linear-gradient(rgba(87,109,112,1), rgba(207,255,234,.4));
-	background: -moz-linear-gradient(rgba(87,109,112,1), rgba(207,255,234,.4));
-	background: -o-linear-gradient(rgba(87,109,112,1), rgba(207,255,234,.4));
-	background: linear-gradient(rgba(87,109,112,1), rgba(207,255,234,.4));*/
-	background: -webkit-linear-gradient(rgba(59,68,67,1), rgba(59,68,67,.4));
-	background: -moz-linear-gradient(rgba(59,68,67,1), rgba(59,68,67,.4));
-	background: -o-linear-gradient(rgba(59,68,67,1), rgba(59,68,67,.4));
-	background: linear-gradient(rgba(59,68,67,1)#C9C1AC, rgba(59,68,67,.7));
+	background: -webkit-linear-gradient(rgba(207,164,108,.9), rgba(207,164,108,.50));
+	background: -moz-linear-gradient(rgba(207,164,108,.9), rgba(207,164,108,.50));
+	background: -o-linear-gradient(rgba(207,164,108,.9), rgba(207,164,108,.50));
+	background: linear-gradient(rgba(207,164,108,.9), rgba(207,164,108,.50));
 }	
 
 #projects p {
