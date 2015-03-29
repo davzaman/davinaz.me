@@ -57,7 +57,7 @@ p {
 
 h1 {
 	width: 100%;
-	font-size: 5em;
+	font-size: 4em;
 	padding-top: 50px;
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
@@ -67,6 +67,8 @@ h1 {
 
 h2 {
 	font-family: 'Codystar', cursive;
+	color: #48649D;
+	margin-bottom: 0;
 }
 
 .container > hr {
@@ -88,4 +90,7 @@ table {
 
 #contact-me{
 	background-color: rgba(2,3,4,.4);
+	background-image: url("MalibuBreak.jpg");
+	background-size: contain;
+	background-attachment: fixed;
 }
