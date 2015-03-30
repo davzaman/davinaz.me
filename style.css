@@ -54,9 +54,9 @@ body {
 	position: fixed;
 	background-image: url("sun-spokes.png");
 	background-size: cover;
-	height: 275px;
-	width: 275px;
-	margin: -56px 0 0 -62px;
+	height: 225px;
+	width: 225px;
+	margin: -30px 0 0 -31px;
 }
 
 .slide {
