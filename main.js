@@ -1,14 +1,9 @@
-var rotate = function() {
-
-}
-
 var main = function() {
 	var currentScroll = 0;
 	var degree = 0;
 	$(document).scroll(function() {
 		var nextScroll = $(this).scrollTop();
 		function rotate(degree){
-			center: ["50px", "100px"];
 			$('#spokes').css({ WebkitTransform: 'rotate(' + degree + 'deg)'});
 			$('#spokes').css({ '-moz-transform': 'rotate(' + degree + 'deg)'});
 		}
