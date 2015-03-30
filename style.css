@@ -14,7 +14,7 @@ body {
 .nav-container {
 	position: relative;
 	float: right;
-	margin-top: 135px;
+	margin: 90px 2px 0 0;
 	z-index: 50;
 }
 
@@ -24,7 +24,12 @@ body {
 	margin-left: 38px;
 	height: 100%;
 	text-align: center;
-	background: rgba(255,255,255,1);
+	background: rgba(219,164,101,1);
+}
+
+#nav a {
+	color: rgba(255,246,227,1);
+	text-decoration: none;
 }
 #nav ul {
 	position: relative;
@@ -55,8 +60,8 @@ body {
 	background-image: url("sun-spokes.png");
 	background-size: cover;
 	height: 225px;
-	width: 225px;
-	margin: -30px 0 0 -31px;
+	width: 227px;
+	margin: -31px 0 0 -33px;
 }
 
 .slide {
@@ -67,7 +72,7 @@ body {
 	margin: 0;
 	height: 100%;
 	width: 950px;
-	padding: 0 0 30px 50px;
+	padding: 0 0 80px 50px;
 	display: inline-block;
 }
 
@@ -101,7 +106,7 @@ p {
 h1 {
 	width: 100%;
 	font-size: 4em;
-	padding-top: 50px;
+	padding-top: 80px;
 	margin: 0;
 	font-family: 'Montserrat', sans-serif;
 	color: white;
@@ -110,7 +115,7 @@ h1 {
 
 h2 {
 	font-family: 'Codystar', cursive;
-	color: #48649D;
+	color: #7b1c1d;
 	margin-bottom: 0;
 }
 
