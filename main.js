@@ -7,6 +7,8 @@ var main = function() {
 		function rotate(degree){
 			$('#spokes').css({ WebkitTransform: 'rotate(' + degree + 'deg)'});
 			$('#spokes').css({ '-moz-transform': 'rotate(' + degree + 'deg)'});
+			$('#spokes').css({ '-o-transform': 'rotate(' + degree + 'deg)'});
+			$('#spokes').css({ 'transform': 'rotate(' + degree + 'deg)'});
 		}
 		$('.slide').each(function() {
 			var slidepos = $(this).offset().top;

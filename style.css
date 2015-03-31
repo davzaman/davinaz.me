@@ -4,6 +4,10 @@ body {
 	width: 100%;
 	position: relative;
 }
+
+a {
+	text-decoration: none;
+}
 .sun-container {
 	position: relative;
 	float: right;
@@ -29,12 +33,10 @@ body {
 
 #nav a {
 	color: rgba(255,246,227,1);
-	text-decoration: none;
 }
 #nav ul {
 	position: relative;
 	display: table-cell;
-	/*padding: 0 15px 0 15px;*/
 	padding: 0;
 	vertical-align: middle;
 }
@@ -42,7 +44,6 @@ body {
 	font-family: 'Lora', serif;
 	font-size: 1.125em;
 	display: block;
-	/*margin: 25px 0 25px 0;*/
 	padding: 15px 15px 15px 15px;
 }
 
@@ -55,7 +56,7 @@ body {
 	position: fixed;
 	height: 150px;
 	width: 150px;
-	background-image: url("my-face.JPG");
+	background-image: url("IMG/my-face.JPG");
 	background-size: cover;
 	border-radius: 100%;
 	border: 7px solid;
@@ -65,7 +66,7 @@ body {
 #spokes {
 	display: block;
 	position: fixed;
-	background-image: url("sun-spokes.png");
+	background-image: url("IMG/sun-spokes.png");
 	background-size: cover;
 	height: 225px;
 	width: 227px;
@@ -85,7 +86,7 @@ body {
 }
 
 #header {
-	background-image: url("header-bg.jpeg");
+	background-image: url("IMG/bg_images/header-bg.jpeg");
 	background-size: cover;
 	background-attachment: fixed;
 	background-color: rgba(2,3,4,.4);
@@ -137,10 +138,6 @@ h2 {
 
 
 #projects {
-		/*background-color: rgba(255,255,255);
-		background-image: url("projects: ;-bg.jpg");
-		background-size: cover;
-		background-attachment: fixed;*/
 	background: -webkit-linear-gradient(rgba(207,164,108,.9), rgba(207,164,108,.50));
 	background: -moz-linear-gradient(rgba(207,164,108,.9), rgba(207,164,108,.50));
 	background: -o-linear-gradient(rgba(207,164,108,.9), rgba(207,164,108,.50));
@@ -148,7 +145,6 @@ h2 {
 }	
 
 #projects p {
-	/*color: black;*/
 	font-size: 1.3em;
 }
 
@@ -159,11 +155,46 @@ table {
 
 #contact-me{
 	background-color: rgba(2,3,4,.4);
-	background-image: url("contact-bg.jpg");
+	background-image: url("IMG/bg_images/contact-bg.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 }
 
 #contact-me p {
 	font-size: 1.5em;
+}
+
+.bubble-container {
+	width: 50%;
+}
+
+.bubble-container img {
+	margin: 20px 6.25% 0 0;
+	transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-moz-transition: all 0.3s ease-in-out;
+}
+
+.bubble-container img:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1,);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+footer {
+	padding: 20px 0 20px 20px;
+	font-family: 'Lora', serif;
+	color: white;
+	font-size: .75em;
+	background-color: rgba(75,11,16,.85);#36090d
+}
+
+footer a {
+	color: rgba(151,232,208,1);
+}
+
+footer a:hover {
+	color: rgba(118,181,162,1);
 }
