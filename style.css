@@ -34,13 +34,21 @@ body {
 #nav ul {
 	position: relative;
 	display: table-cell;
-	padding: 0 15px 0 15px;
+	/*padding: 0 15px 0 15px;*/
+	padding: 0;
 	vertical-align: middle;
 }
 #nav li {
+	font-family: 'Lora', serif;
 	font-size: 1.125em;
 	display: block;
-	margin: 25px 0 25px 0;
+	/*margin: 25px 0 25px 0;*/
+	padding: 15px 15px 15px 15px;
+}
+
+.active-nav {
+	background-color: rgba(149,104,58,1);
+	
 }
 
 #sun {
@@ -115,6 +123,7 @@ h1 {
 
 h2 {
 	font-family: 'Codystar', cursive;
+	font-size: 2em;
 	color: #7b1c1d;
 	margin-bottom: 0;
 }
@@ -140,7 +149,7 @@ h2 {
 
 #projects p {
 	/*color: black;*/
-	font-size: 1.125em;
+	font-size: 1.3em;
 }
 
 table {
