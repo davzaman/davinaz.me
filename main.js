@@ -12,7 +12,7 @@ var main = function() {
 		}
 		$('.slide').each(function() {
 			var slidepos = $(this).offset().top;
-			if(slidepos - 80 < currentScroll){
+			if(slidepos - 110 < currentScroll){
 				$currentSlide = $(this);
 			}
 			var id = $currentSlide.attr('id');

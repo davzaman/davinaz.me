@@ -18,7 +18,7 @@ a {
 .nav-container {
 	position: relative;
 	float: right;
-	margin: 90px 2px 0 0;
+	margin: 90px 5px 0 0;
 	z-index: 50;
 }
 
@@ -29,6 +29,7 @@ a {
 	height: 100%;
 	text-align: center;
 	background: rgba(219,164,101,1);
+	border: 2px solid rgba(167,117,65,1);
 }
 
 #nav a {
@@ -41,7 +42,7 @@ a {
 	vertical-align: middle;
 }
 #nav li {
-	font-family: 'Lora', serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 1.125em;
 	display: block;
 	padding: 15px 15px 15px 15px;
@@ -99,7 +100,7 @@ a {
 }
 
 p {
-	font-family: 'Lora', serif;
+	font-family: 'Raleway', sans-serif;
 	color: white;
 	margin: 0;
 }
@@ -123,14 +124,14 @@ h1 {
 }
 
 h2 {
-	font-family: 'Codystar', cursive;
+	font-family: 'Raleway', sans-serif;
 	font-size: 2em;
 	color: #7b1c1d;
 	margin-bottom: 0;
 }
 
 .container > hr {
-	background: rgba(255,255,255,0.2) no-repeat scroll center;
+	background: rgba(255,255,255,1) no-repeat scroll center;
 	margin-left: 0;
 	width: 50%;
 	height: 2px;
@@ -185,7 +186,7 @@ table {
 
 footer {
 	padding: 20px 0 20px 20px;
-	font-family: 'Lora', serif;
+	font-family: 'Raleway', sans-serif;
 	color: white;
 	font-size: .75em;
 	background-color: rgba(75,11,16,.85);#36090d
