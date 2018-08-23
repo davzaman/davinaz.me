@@ -27,6 +27,9 @@ body {
 .yellow {
 	color: #b58901;
 }
+.green {
+	color: #859901;
+}
 
 #about {
 	background-color: #ffffff;
@@ -78,7 +81,9 @@ body {
 	margin-top: 10vh;
 	/* Ref: https://www.w3schools.com/css/css3_shadows.asp */
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-	 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	overflow-y: scroll;
+
 }
 
 #navbar {
@@ -127,8 +132,15 @@ body {
 
 /* ****** Stuff below navbar ****** */
 #shell-body {
-	overflow: auto; /* scroll */
 	padding: 10px 10px 10px 5px;
+}
+
+li p {
+	font-family: 'Inconsolata', sans-serif;	
+	margin-left: 20px;
+}
+.extra-content p {
+	text-align: center;
 }
 
 #shell-body li::before {
@@ -139,6 +151,7 @@ body {
 }
 #shell-body ul {
 	padding: 0;
+	margin: 0;
 }
 #shell-body li {
 	list-style-type: none;
@@ -152,19 +165,22 @@ body {
 	font-weight: bold;
 	color: #859901;
 	display:inline;
-	/* content: '[x] more '; */
-	/* content: 'more '; */
 }
 
 .extra-content {
 	display: none;
 	background-color: #01313d;
 	text-align: center;
+	overflow: scroll;
 }
 
 li .extra-content {
 	margin: 2px 2px 2px 8px;
 	padding: 5px 5px 5px 5px;
+}
+
+.timestamp {
+	float: right;
 }
 
 a {
@@ -188,4 +204,3 @@ footer {
 	font-size: .75em;
 	background-color: rgba(75,11,16,.85);#36090d
 }
-
