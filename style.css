@@ -21,6 +21,12 @@ body {
 .green {
 	color: #859901;
 }
+.red {
+	color: #dc322f;
+}
+.blue {
+	color: #268bd2;
+}
 
 /* === About me card ===== */
 #about {
@@ -48,9 +54,13 @@ body {
 	0 6px 20px 0 rgba(0, 0, 0, 0.19);	
 }
 
+.bubble-container {
+	margin: 0 auto 0 auto;
+	display: inline-block;
+}
 .bubble-container img {
-	margin: 20px auto 10px auto;
 	width: 20px;
+	margin: 20px 5px 10px 5px;
 	transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -59,7 +69,7 @@ body {
 
 .bubble-container img:hover {
 	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1,);
+	-moz-transform: scale(1.1);
 	-o-transform: scale(1.1);
 	transform: scale(1.1);
 }
@@ -79,15 +89,16 @@ body {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
 		0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	overflow-y: scroll;
-
+	display: flex;
+	flex-flow: column;
 }
 
 #navbar {
-	max-width: 100%;
-	padding: 4px 8px 4px 8px;
+	width: inherit;
+	position: fixed;
 	/* background-color: #133647; */
 	background-color: #002833;
-	height: 15px;
+	/* height: 15px; */
 	border-radius: 5px 5px 0 0; 
 }
 
@@ -99,7 +110,11 @@ body {
 	display: inline-block;
 }
 
+#buttons{
+	margin: 4px 8px 4px 8px;
+}
 #nav-text {
+	margin: 4px 8px 4px 8px;
 	display: inline-block;
 }
 
@@ -113,6 +128,12 @@ body {
     float: left;
     text-align: center;
     /* width: 33.33333%; */
+}
+.alignleft:after {
+    clear: both;
+}
+.aligncenter:after {
+    clear: both;
 }
 
 /* Navbar Button Colors */
@@ -128,13 +149,26 @@ body {
 
 /* ****** Stuff below navbar ****** */
 #shell-body {
+	margin-top: 20px;
 	padding: 10px 10px 10px 5px;
 }
 
-li p {
+p {
 	font-family: 'Inconsolata', sans-serif;	
+}
+li > p {
 	margin-left: 20px;
 }
+img {
+	width: 20ch;
+	float: left;
+	margin: 0 5px 5px 5px;
+}
+
+img + p { /* Adjacent combinator */
+	margin-top: 5px;
+}
+
 .extra-content p {
 	text-align: center;
 }
@@ -193,6 +227,15 @@ p a:hover {
 
 p {
 	margin: 0;
+}
+
+h1 {
+	font-family: 'Inconsolata', sans-serif;	
+	color: #268bd2;
+	font-size: 1.05em;
+	margin-bottom: 0px;
+	margin-top: .3em;
+	text-decoration: underline;
 }
 
 /* _____ Credits ______ */

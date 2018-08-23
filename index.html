@@ -19,25 +19,25 @@
 		<p>Hi! I'm Davina.</p>
 		<p>Software engineer and current grad student at UCLA, studying Computer Science.</p>
 
-		<span class="bubble-container">
-				<a href="mailto:davzaman@gmail.com?Subject=Hello!" target="_blank">
-					<img src="IMG/contact_images/email.png">
-				</a>
-				<a href="http://www.github.com/davzaman" target="_blank">
-					<img src="IMG/contact_images/github.png">
-				</a>
-				<a href="http://www.linkedin.com/in/davinaz" target="_blank">
-					<img src="IMG/contact_images/linkedin.png">
-				</a>
-				<!-- <a href="http://www.twitter.com/davzaman" target="_blank"> -->
-					<!-- <img src="IMG/contact_images/twitter.png"> -->
-				<!-- </a> -->
-			</span> 
+		<div class="bubble-container">
+			<a href="mailto:davzaman@gmail.com?Subject=Hello!" target="_blank">
+				<img src="IMG/contact_images/email.png">
+			</a>
+			<a href="http://www.github.com/davzaman" target="_blank">
+				<img src="IMG/contact_images/github.png">
+			</a>
+			<a href="http://www.linkedin.com/in/davinaz" target="_blank">
+				<img src="IMG/contact_images/linkedin.png">
+			</a>
+			<!-- <a href="http://www.twitter.com/davzaman" target="_blank"> -->
+				<!-- <img src="IMG/contact_images/twitter.png"> -->
+			<!-- </a> -->
+		</div> 
 	</div> <!-- end about card -->
 
 	<div id="terminal">
 		<div id="navbar">
-			<span class="alignleft">
+			<span class="alignleft" id="buttons">
 				<div class="nav-button" id="close"></div>
 				<div class="nav-button" id="minimize"></div>
 				<div class="nav-button" id="expand"></div>
@@ -57,6 +57,7 @@
 					<p> > Click on the glowing words to find out more, or download some pdf's.</p>
 				</li>
 
+				<!-- More About -->
 				<li class="terminal-line">
 					<div class="more">more </div>about_davina.txt
 					<div class="timestamp"></div>
@@ -65,30 +66,85 @@
 						<p>Pursuing a <span class="magenta">PhD at UCLA</span> in computer science.</p>
 						<p>Interested in <span class="yellow">machine learning</span> applied to <span class="yellow">medical</span> diagnosis and treatment.</p>
 						<p>Graduated from <span class="cyan">UCSB with a BSc</span>, also in CS.</p>
-						<p>Always down to talk about skiing, martial arts, or sand volleyball.</p>
-						<p>Occasionally make guitar covers or remixes.</p>
+						<p>Always down to talk about <span class="blue">skiing</span>, martial arts, or sand volleyball.</p>
+						<p>Occasionally <a href="https://soundcloud.com/daviinci">make guitar covers</a> or remixes.</p>
 					</section>
 				</li>
 
+				<!-- Experience (Blue) -->
 				<li class="terminal-line">
 					<div class="more">more </div>about_experience.txt
 					<div class="timestamp"></div>
-					<p class="extra-content">This is some more about experience.</p>
+					<section class="extra-content">
+						<h1>Software Engineer Intern at Pinterest</h1>
+						<p>I worked on the Annotations pipeline as part of the Content/Knowledge team during summer 2017.</p>
+						<h1>Software Engineer Intern at Impact Radius</h1>
+						<p>Spent a year at Impact Radius part time during the academic year, full time over summer 2015-2016.</p>
+						<p>I worked on improving their metrics and monitoring systems as well as internationalization and localization workflow.</p>
+						<h1>Software Engineer Intern at GLENWorld</h1>
+						<p>Developed new features and mini-games for the XPrize Global Learning Competition, part time for a few months during 2015.</p>
+						<h1>Software Engineer Intern at Datapop</h1>
+						<p>Worked on internal tooling to optimize company workflow and to resolve conflicts across taxonomies, during summer of 2013 and 2014.</p>
+					</section>
 				</li>
+				
+				<!-- Research (Magenta) -->
 				<li class="terminal-line">
 					<div class="more">more </div>about_research.txt
 					<div class="timestamp"></div>
-					<p class="extra-content">Yet to come...</p>
+					<section class="extra-content">
+						<h1 class="magenta">More to Come... (UCLA)</h1>
+						<h1 class="magenta">Programming Languages Lab (UCSB)</h1>
+						<p>Working under Prof. Ben Hardekopf to find an effective comparison metric, based on linear algebra, to compare test sets/fuzzers.</p>
+						<p>Assisted writing a paper with Prof. Hardekopf and PhD student Miroslav Gavrilov based on this research.</p>
+					</section>
 				</li>
+
+				<!-- Projects (Yellow) -->
 				<li class="terminal-line">
 					<div class="more">more </div>about_projects.txt
 					<div class="timestamp"></div>
-					<p class="extra-content">This is some more about projects</p>
+					<section class="extra-content">
+						<h1 class="yellow">GauchoSell</h1>
+						<img src="IMG/gauchosell.png">
+						<p>GauchoSell is an Android mobile app that will allow students to easily sell and bid on items within their own community. This app will include features such as filtering by category or price ranges, monitoring the current bid for each item, allowing sellers and buyers to back out of bids, and many more.</p>
+					</section>
 				</li>
+
+				<!-- Awards (Red) -->
 				<li class="terminal-line">
-					<div class="more">more </div>about_awards.txt
+					<div class="more">more </div>about_awards_and_activities.txt
 					<div class="timestamp"></div>
-					<p class="extra-content">This is some more about projects</p>
+					<section class="extra-content">
+						<h1 class="red">Grace Hopper Celebration Scholarship (2017) </h1>
+						<p>The Computer Science department at UCSB funded some of its students for the first time to attend the Grace Hopper Celebration of Women in Computing.</p>
+						<p>Honestly a wonderful event, I am looking forward to being able to attend again in the future.</p>
+
+						<h1 class="red">KPCB Fellow and Decision Committee (2017) </h1>
+						<p>I had the honor of being a part of the Kleiner Perkins Fellows program while interning at Pinterest.</p>
+						<p>After surviving eliminations out of thousands of applicants, I was able to join 80 other Fellows in many networking events and workshops with technical leaders in Silicon Valley.</p>
+						<p>Additionally, I served on the Decision Committee to help pick up potential Fellows for 2018.</p>
+						<p>Also, Gini Kim is my idol.</p>
+
+						<h1 class="red">Phi Sigma Rho Chapter Founder</h1>
+						<p><a href="http://www.phisigmarho.org/">Phi Sigma Rho</a> is a nationally recognized sorority focused on women in STEM.</p>
+						<p>After responding to an an email blast for interest, I helped establish the Alphi Xi chapter of Phi Sigma Rho at UCSB and became part of the founding class in Spring of 2016.</p>
+						<p>It wasn't until Fall of 2017 that we became an official chapter, where we all wanted to cry of happiness because our hard work had paid off.</p>
+						<p>Through the process of being in charge of designs, involved in planning events, writing bylaws, recruiting, and mentorship, I had an incredible and rewarding experience with other women engineers that I will always remember.</p>
+
+						<h1 class="red">SB Hacks Organizer</h1>
+						<p>Starting from my freshman year to my senior year, I watched as SB Hacks grew into something incredible.</p>
+						<p>I was involved with logistics (venue, food, etc), design, and getting sponsors throughout my time with the team.</p>
+
+						<h1 class="red">Thomas Edison Award (2013) </h1>
+						<p>I participated and won first place in my very first hackathon.</p>
+						<p>Out of 15 teams, and hours I don't want to think about, my team won for most creative and useful project for the company.</p>
+						
+						<h1 class="red">Programming Club President and Founder (High School)</h1>
+						<p>After taking Intro to CS at UCLA after my freshman year, I decided that I alone should not have to suffer the wrath of C++.</p>
+						<p>I saw there was no programming clubs at my school, so I made one.</p>
+						<p>In some odd foreshadowing of continuing to graduate school, I created lessons plans as well as coding exercises to teach C++ to club members.</p>
+					</section>
 				</li>
 
 				<!-- Downloadables -->
