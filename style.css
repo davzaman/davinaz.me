@@ -30,12 +30,11 @@ body {
 
 #about {
 	background-color: #ffffff;
-	/* display: flex; */
-	/* justify-content: center; */
 	text-align: center;
-	width: 30ch;
+	max-width: 25ch;
 	border-radius: 3px;
-	margin: 20vh 20ch 20vh 15ch;
+	margin: 20vh 15ch 20vh 15ch;
+	padding: 10px 15px 10px 15px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
 	 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
 }
@@ -48,8 +47,29 @@ body {
 	background-size: cover;
 	display: block;
 	margin: 10% auto 10% auto;
+	border: 1px solid;
+	border-color: #839496;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+	0 6px 20px 0 rgba(0, 0, 0, 0.19);	
 }
 
+.bubble-container img {
+	margin: 20px auto 10px auto;
+	width: 20px;
+	transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-moz-transition: all 0.3s ease-in-out;
+}
+
+.bubble-container img:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1,);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/* ------------- TERMINAL ------------- */
 #terminal {
 	width: 75ch;
 	height: 80vh;
@@ -124,18 +144,16 @@ body {
 	list-style-type: none;
 }
 
-.more:hover::before {
+.more:hover {
 	font-size: 120%;
 }
-.more::before {
+.more {
 	text-shadow: 0 0 1px #b3e2a8;
-	/* content: '[x] more '; */
-	content: 'more ';
 	font-weight: bold;
 	color: #859901;
-}
-.more {
 	display:inline;
+	/* content: '[x] more '; */
+	/* content: 'more '; */
 }
 
 .extra-content {
@@ -161,52 +179,6 @@ p {
 
 .image-filter {
 	background: rgba(0,0,0,.3);
-}
-
-#projects {
-	background: -webkit-linear-gradient(rgba(207,164,108,.9), rgba(207,164,108,.50));
-	background: -moz-linear-gradient(rgba(207,164,108,.9), rgba(207,164,108,.50));
-	background: -o-linear-gradient(rgba(207,164,108,.9), rgba(207,164,108,.50));
-	background: linear-gradient(rgba(207,164,108,.9), rgba(207,164,108,.50));
-}	
-
-#projects p {
-	font-size: 1.3em;
-}
-
-table {
-	width: 100%;
-	text-align: center;
-}
-
-#contact-me{
-	background-color: rgba(2,3,4,.4);
-	background-image: url("IMG/bg_images/contact-bg.jpg");
-	background-size: cover;
-	background-attachment: fixed;
-}
-
-#contact-me p {
-	font-size: 1.5em;
-}
-
-.bubble-container {
-	width: 50%;
-}
-
-.bubble-container img {
-	margin: 20px 6.25% 0 0;
-	transition: all 0.5s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-moz-transition: all 0.3s ease-in-out;
-}
-
-.bubble-container img:hover {
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1,);
-	-o-transform: scale(1.1);
-	transform: scale(1.1);
 }
 
 footer {
