@@ -1,13 +1,3 @@
-/* TODO */
-footer a {
-	color: rgba(151,232,208,1);
-}
-
-footer a:hover {
-	color: rgba(118,181,162,1);
-}
-
-/* */
 body {
 	margin: 0;
 	padding: 0;
@@ -18,6 +8,7 @@ body {
 	color: #839496;
 }
 
+/* Defining some colors from Solarized theme */
 .cyan {
 	color: #2aa198;
 }
@@ -31,6 +22,7 @@ body {
 	color: #859901;
 }
 
+/* === About me card ===== */
 #about {
 	background-color: #ffffff;
 	text-align: center;
@@ -70,6 +62,10 @@ body {
 	-moz-transform: scale(1.1,);
 	-o-transform: scale(1.1);
 	transform: scale(1.1);
+}
+
+.bubble-container a {
+	text-decoration: none;
 }
 
 /* ------------- TERMINAL ------------- */
@@ -183,24 +179,30 @@ li .extra-content {
 	float: right;
 }
 
-a {
+/* I don't want the wgets to be underlined, but other links I do. */
+li > a {
 	text-decoration: none;
 }
 
+p a {
+	color: #eee8d5;
+}
+p a:hover {
+	color: #cac5b4;
+}
+
 p {
-	/* font-family: 'Raleway', sans-serif; */
-	/* color: white; */
 	margin: 0;
 }
 
-.image-filter {
-	background: rgba(0,0,0,.3);
+/* _____ Credits ______ */
+#more-credits {
+	display: none;
 }
 
 footer {
-	padding: 20px 0 20px 20px;
-	font-family: 'Raleway', sans-serif;
-	color: white;
-	font-size: .75em;
-	background-color: rgba(75,11,16,.85);#36090d
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	color: rgba(131,148,150, .5);
 }
