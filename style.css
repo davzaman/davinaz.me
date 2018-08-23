@@ -215,7 +215,7 @@ footer {
 
 	#about {
 		margin: 5vh auto 5vh auto;
-		max-width: 50ch;
+		max-width: 40ch;
 		padding: 5px 5px 5px 5px;
 		font-size: 1.5em;
 	}
@@ -234,7 +234,6 @@ footer {
 		margin: 0 auto 0 auto;
 		height: 40vh;
 		width: 85ch;
-		max-width: 85ch;
-		font-size: 1.5em;
+		font-size: 1.1em;
 	}
 }
