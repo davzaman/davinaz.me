@@ -1,13 +1,53 @@
+/* TODO */
+footer a {
+	color: rgba(151,232,208,1);
+}
+
+footer a:hover {
+	color: rgba(118,181,162,1);
+}
+
+/* */
 body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	display: flex;
-	justify-content: center;
-	/* background-image: url("IMG/bg.jpg"); */
+	/* justify-content: center; */
 	background-image: url("IMG/bg.png");
-	/* background-size: contain; */
 	color: #839496;
+}
+
+.cyan {
+	color: #2aa198;
+}
+.magenta {
+	color: #d33682;
+}
+.yellow {
+	color: #b58901;
+}
+
+#about {
+	background-color: #ffffff;
+	/* display: flex; */
+	/* justify-content: center; */
+	text-align: center;
+	width: 30ch;
+	border-radius: 3px;
+	margin: 20vh 20ch 20vh 15ch;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+	 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+}
+
+#face {
+	background-image: url("IMG/professional_pfp.png");
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	background-size: cover;
+	display: block;
+	margin: 10% auto 10% auto;
 }
 
 #terminal {
@@ -54,18 +94,18 @@ body {
     /* width: 33.33333%; */
 }
 
+/* Navbar Button Colors */
 #close {
 	background-color: rgb(177, 29, 29);
 }
-
 #minimize {
 	background-color: rgb(177, 137, 29);
 }
-
 #expand {
 	background-color: rgb(41, 155, 37);
 }
 
+/* ****** Stuff below navbar ****** */
 #shell-body {
 	overflow: auto; /* scroll */
 	padding: 10px 10px 10px 5px;
@@ -77,11 +117,9 @@ body {
 	margin-right: 5px;
 	margin-left: 5px;
 }
-
 #shell-body ul {
 	padding: 0;
 }
-
 #shell-body li {
 	list-style-type: none;
 }
@@ -103,6 +141,7 @@ body {
 .extra-content {
 	display: none;
 	background-color: #01313d;
+	text-align: center;
 }
 
 li .extra-content {
@@ -113,135 +152,16 @@ li .extra-content {
 a {
 	text-decoration: none;
 }
-.sun-container {
-	position: relative;
-	float: right;
-	z-index: 100;
-	margin: 45px 225px 0 0;
-}
-
-.nav-container {
-	position: relative;
-	float: right;
-	margin: 90px 5px 0 0;
-	z-index: 50;
-}
-
-#nav {
-	display: table;
-	position: fixed;
-	margin-left: 38px;
-	height: 100%;
-	text-align: center;
-	background: rgba(219,164,101,1);
-	border: 2px solid rgba(167,117,65,1);
-}
-
-#nav a {
-	color: rgba(255,246,227,1);
-}
-#nav ul {
-	position: relative;
-	display: table-cell;
-	padding: 0;
-	vertical-align: middle;
-}
-#nav li {
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.125em;
-	display: block;
-	padding: 15px 15px 15px 15px;
-}
-
-.active-nav {
-	background-color: rgba(149,104,58,1);
-	
-}
-
-#sun {
-	position: fixed;
-	height: 150px;
-	width: 150px;
-	background-image: url("IMG/my-face.JPG");
-	background-size: cover;
-	border-radius: 100%;
-	border: 7px solid;
-	border-color: #F4A95A;
-}
-
-#spokes {
-	display: block;
-	position: fixed;
-	background-image: url("IMG/sun-spokes.png");
-	background-size: cover;
-	height: 225px;
-	width: 227px;
-	margin: -31px 0 0 -33px;
-}
-
-.slide {
-	position: relative;
-}
-
-.container {
-	margin: 0;
-	height: 100%;
-	width: 950px;
-	padding: 0 0 80px 50px;
-	display: inline-block;
-}
-
-#header {
-	background-image: url("IMG/bg_images/header-bg.jpeg");
-	background-size: cover;
-	background-attachment: fixed;
-	background-color: rgba(2,3,4,.4);
-}
-
-#header h1 {
-	padding: 190px 0 0 0;
-	font-size: 5em;
-	margin: 0;
-}
 
 p {
-	font-family: 'Raleway', sans-serif;
-	color: white;
+	/* font-family: 'Raleway', sans-serif; */
+	/* color: white; */
 	margin: 0;
-}
-
-#header p {
-	font-size: 1.5em;
 }
 
 .image-filter {
 	background: rgba(0,0,0,.3);
 }
-
-h1 {
-	width: 100%;
-	font-size: 4em;
-	padding-top: 80px;
-	margin: 0;
-	font-family: 'Montserrat', sans-serif;
-	color: white;
-	text-shadow: -1px 2px black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-h2 {
-	font-family: 'Raleway', sans-serif;
-	font-size: 2em;
-	color: #7b1c1d;
-	margin-bottom: 0;
-}
-
-.container > hr {
-	background: rgba(255,255,255,1) no-repeat scroll center;
-	margin-left: 0;
-	width: 50%;
-	height: 2px;
-}
-
 
 #projects {
 	background: -webkit-linear-gradient(rgba(207,164,108,.9), rgba(207,164,108,.50));
@@ -297,10 +217,3 @@ footer {
 	background-color: rgba(75,11,16,.85);#36090d
 }
 
-footer a {
-	color: rgba(151,232,208,1);
-}
-
-footer a:hover {
-	color: rgba(118,181,162,1);
-}
