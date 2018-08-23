@@ -8,12 +8,37 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="IMG/favicon.png">
 	<link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-	<div class="sun-container">
-		<div id="spokes"></div>
-		<div id="sun"></div>
-	</div> <!-- end sun-container -->
-	<div class="nav-container">
+
+	<div id="terminal">
+		<div id="navbar">
+			<span class="alignleft">
+				<div class="nav-button" id="close"></div>
+				<div class="nav-button" id="minimize"></div>
+				<div class="nav-button" id="expand"></div>
+			</span>
+			<p class="aligncenter" id="nav-text">
+				davina@zamanzadeh: ~
+				<!-- test@test : ~ (zsh) -->
+			</p>
+		</div>
+		
+		<div id="shell-body">
+			<ul>
+				<li class="terminal-line">
+					<div class="more">about_davina.txt</div>
+					<p class="extra-content">This is some more about me</p>
+				</li>
+				<li class="terminal-line">
+						<div class="more">about_projects.txt</div>
+						<p class="extra-content">This is some more about projects</p>
+					</li>
+			</ul>
+		</div>
+	</div> <!-- end terminal -->
+
+	<!-- <div class="nav-container">
 		<div id="nav">
 			<ul>
 				<a href="#header"><li class = active-nav>About</li></a>
@@ -22,6 +47,7 @@
 			</ul>
 		</div>
 	</div>
+
 	<section id="header" class="slide" data-speed="10">
 		<div class="image-filter">
 		<div class="container">
@@ -32,9 +58,10 @@
 				a Computer Science student at UCSB, but I also 
 				have a passion for playing guitar, soccer 
 				and beach volleyball, amongst other hobbies!</p>
-		</div> <!-- end container -->
-		</div><!-- end image filter-->
-	</section> <!-- end header -->
+		</div> 
+		</div>
+	</section> 
+
 	<section id="projects" class="slide" data-speed="10">
 		<div class="container">
 			<h1>My Projects</h1> <hr>
@@ -52,7 +79,7 @@
 						<a href="" target="_blank"><h2>Project 3</h2>
 						<p>Description of project 3</p>
 					</div></td>
-				</tr> <!-- end first row -->
+				</tr> 
 				<tr>
 					<td><div class="project1">
 						<a href="" target="_blank"><h2>Project 4</h2></a>
@@ -66,10 +93,10 @@
 						<a href="" target="_blank"><h2>Project 6</h2></a>
 						<p>Description of project 3</p>
 					</div></td>
-				</tr> <!-- end second row-->
+				</tr> 
 			</table>
-		</div> <!-- end container -->
-	</section> <!-- end projects -->
+		</div> 
+	</section> 
 	<section id="contact-me" class="slide" data-speed="10">
 		<div class="image-filter">
 		<div class="container">
@@ -91,12 +118,12 @@
 				<a href="http://www.twitter.com/davzaman" target="_blank">
 					<img src="IMG/contact_images/twitter.png">
 				</a>
-			</span> <!--end bubble container-->
-		</div><!--end container-->
-		</div><!-- end image filter-->
-	</section> <!-- end contact-->
-	
+			</span> 
+		</div>
+		</div>
+	</section> 
 	<footer>Website designed and built with love by Davina Zamanzadeh.</footer>
+ -->
 	<!--scripts!!-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="main.js"></script>

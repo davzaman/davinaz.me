@@ -2,7 +2,112 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100%;
-	position: relative;
+	display: flex;
+	justify-content: center;
+	/* background-image: url("IMG/bg.jpg"); */
+	background-image: url("IMG/bg.png");
+	/* background-size: contain; */
+	color: #839496;
+}
+
+#terminal {
+	width: 75ch;
+	height: 80vh;
+	background-color: #003947;
+	border-radius: 5px; 
+	margin-top: 10vh;
+	/* Ref: https://www.w3schools.com/css/css3_shadows.asp */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+	 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#navbar {
+	max-width: 100%;
+	padding: 4px 8px 4px 8px;
+	/* background-color: #133647; */
+	background-color: #002833;
+	height: 15px;
+	border-radius: 5px 5px 0 0; 
+}
+
+.nav-button {
+	height: 8px;
+	width: 8px;
+	margin: 1px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+#nav-text {
+	display: inline-block;
+}
+
+/* Ref: https://stackoverflow.com/questions/13694062 */
+.alignleft {
+    float: left;
+    text-align: left;
+    width: 33.33333%;
+}
+.aligncenter {
+    float: left;
+    text-align: center;
+    /* width: 33.33333%; */
+}
+
+#close {
+	background-color: rgb(177, 29, 29);
+}
+
+#minimize {
+	background-color: rgb(177, 137, 29);
+}
+
+#expand {
+	background-color: rgb(41, 155, 37);
+}
+
+#shell-body {
+	overflow: auto; /* scroll */
+	padding: 10px 10px 10px 5px;
+}
+
+#shell-body li::before {
+	content: '$';
+	color: #859901;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#shell-body ul {
+	padding: 0;
+}
+
+#shell-body li {
+	list-style-type: none;
+}
+
+.more:hover::before {
+	font-size: 120%;
+}
+.more::before {
+	text-shadow: 0 0 1px #b3e2a8;
+	/* content: '[x] more '; */
+	content: 'more ';
+	font-weight: bold;
+	color: #859901;
+}
+.more {
+	display:inline;
+}
+
+.extra-content {
+	display: none;
+	background-color: #01313d;
+}
+
+li .extra-content {
+	margin: 2px 2px 2px 8px;
+	padding: 5px 5px 5px 5px;
 }
 
 a {
