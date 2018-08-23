@@ -206,3 +206,21 @@ footer {
 	right: 0;
 	color: rgba(131,148,150, .5);
 }
+
+/* ;;;;;;;;;;; mobile ;;;;;;;;;; */
+@media screen and (max-device-width: 480px) {
+	body {
+		display: inline-block;
+	}
+
+	#about {
+		margin: 5vh auto 5vh auto;
+		max-width: 50ch;
+	}
+
+	#terminal {
+		margin: 0 auto 0 auto;
+		height: 40vh;
+		width: 85ch;
+	}
+}
