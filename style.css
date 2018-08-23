@@ -216,11 +216,24 @@ footer {
 	#about {
 		margin: 5vh auto 5vh auto;
 		max-width: 50ch;
+		padding: 5px 5px 5px 5px;
+		font-size: 1.5em;
+	}
+
+	#face {
+		width: 200px;
+		height: 200px;
+		margin: 5% auto 5% auto;
+	}
+
+	.bubble-container img {
+		width: 40px;
 	}
 
 	#terminal {
 		margin: 0 auto 0 auto;
 		height: 40vh;
 		width: 85ch;
+		font-size: 1.5em;
 	}
 }
