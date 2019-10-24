@@ -33,8 +33,9 @@ body {
 	background-color: #ffffff;
 	text-align: center;
 	max-width: 25ch;
+	height: 40vh;
 	border-radius: 3px;
-	margin: 20vh 15ch 20vh 15ch;
+	margin: 20vh 25ch 20vh 15ch;
 	padding: 10px 15px 10px 15px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
 	 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
@@ -47,7 +48,7 @@ body {
 	height: 150px;
 	background-size: cover;
 	display: block;
-	margin: 10% auto 10% auto;
+	margin: 15% auto 10% auto;
 	border: 1px solid;
 	border-color: #839496;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
