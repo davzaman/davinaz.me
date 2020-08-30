@@ -8,35 +8,19 @@
 	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 	<link rel="icon" type="image/png" href="IMG/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="IMG/favicon-16x16.png" sizes="16x16" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
 
 	<link href="style.css" rel="stylesheet">
+	<script src="https://d3js.org/d3.v6.min.js"></script>
 </head>
 
 <body>
-
-	<div id="about">
-		<div id="face"></div>
-		<p>Hi! I'm Davina.</p>
-		<p>Software engineer and current grad student at UCLA, studying Computer Science.</p>
-
-		<div class="bubble-container">
-			<a href="mailto:davzaman@gmail.com?Subject=Hello!" target="_blank">
-				<img src="IMG/contact_images/email.png">
-			</a>
-			<a href="https://www.github.com/davzaman" target="_blank">
-				<img src="IMG/contact_images/github.png">
-			</a>
-			<a href="https://www.linkedin.com/in/davinaz" target="_blank">
-				<img src="IMG/contact_images/linkedin.png">
-			</a>
-			<!-- <a href="https://www.twitter.com/davzaman" target="_blank"> -->
-				<!-- <img src="IMG/contact_images/twitter.png"> -->
-			<!-- </a> -->
-		</div> 
-	</div> <!-- end about card -->
-
-	<div id="terminal">
-		<div id="navbar">
+	<svg id="svgCanvas" viewbox="0 0 2000 1000" preserveaspectratio="xMinYMin slice" width="100%"  >
+		<g id="starGroup"></g>
+	</svg>
+	<div id="terminal" class="resizable">
+		<div id="topbar">
 			<span class="alignleft" id="buttons">
 				<div class="nav-button" id="close"></div>
 				<div class="nav-button" id="minimize"></div>
@@ -44,22 +28,50 @@
 			</span>
 			<p class="aligncenter" id="nav-text">
 				davina@zamanzadeh: ~
-				<!-- test@test : ~ (zsh) -->
 			</p>
 		</div>
-		
-		<div id="shell-body">
+		<div>
+			<ul id="tabs">
+				<li name="about" class="active-tab">about</li>
+				<li name="experience">experience</li>
+				<li name="research">research</li>
+				<li name="projects">projects</li>
+				<li name="awards">awards</li>
+				<li name="credits">credits</li>
+			</ul>
+		</div>
 
-			<ul>
-				<li class="terminal-line">
-					<span class="green">website </span>--help
-					<div class="timestamp"></div>
-					<p> > Click on the glowing words to find out more, or download some pdf's.</p>
-				</li>
+		<div id="shell-body">
+			<div id="about" class="active-content">
+				<div id="aboutcard">
+					<div id="face"></div>
+					<div class="extra-content">
+						<p style="margin-top:10px">Hi! I'm Davina.</p>
+						<p>I'm a machine learning engineer/data scientist and current grad student at UCLA, studying Computer Science.</p>
+
+						<div class="bubble-container">
+							<a href="mailto:davzaman@gmail.com?Subject=Hello!" target="_blank">
+								<!-- <img src="IMG/contact_images/email.png"> -->
+								<i class="fa fa-envelope"></i>
+							</a>
+							<a href="https://www.github.com/davzaman" target="_blank">
+								<!-- <img src="IMG/contact_images/github.png"> -->
+								<i class="fa fa-github"></i>
+							</a>
+							<a href="https://www.linkedin.com/in/davinaz" target="_blank">
+								<!-- <img src="IMG/contact_images/linkedin.png"> -->
+								<i class="fa fa-linkedin"></i>
+							</a>
+							<!-- <a href="https://www.twitter.com/davzaman" target="_blank"> -->
+								<!-- <img src="IMG/contact_images/twitter.png"> -->
+							<!-- </a> -->
+						</div> 
+					</div>
+				</div> <!-- end about card-->
 
 				<!-- More About -->
-				<li class="terminal-line">
-					<div class="more">more </div>about_davina.txt
+				<li>
+					more about_davina.txt
 					<div class="timestamp"></div>
 					<section class="extra-content" id="aboutme">
 						<p>I am a (San Fernando) Valley girl, born and raised.</p>
@@ -70,27 +82,42 @@
 						<p>Occasionally <a href="https://soundcloud.com/daviinci">make guitar covers</a> or remixes.</p>
 					</section>
 				</li>
+				<!-- Downloadables -->
+				<li>
+					<a href="files/DavinaZ_resume.pdf" download="DavinaZ_resume.pdf" class="wget">
+						wget</a> my_resume.pdf
+					<div class="timestamp"></div>
+				</li>
+				<li>
+					<a href="files/DavinaZ_cv.pdf" download="DavinaZ_cv.pdf" class="wget">
+						wget</a> my_cv.pdf
+					<div class="timestamp"></div>
+				</li>
+			</div> <!-- end about-->
 
+			<div id="experience">
 				<!-- Experience (Blue) -->
 				<li class="terminal-line">
-					<div class="more">more </div>about_experience.txt
+					more about_experience.txt
 					<div class="timestamp"></div>
 					<section class="extra-content">
-						<h1>Software Engineer Intern at Pinterest</h1>
+						<h1 class="cyan">Software Engineer Intern at Pinterest</h1>
 						<p>I worked on the Annotations pipeline as part of the Content/Knowledge team during summer 2017.</p>
-						<h1>Software Engineer Intern at Impact Radius</h1>
+						<h1 class="cyan">Software Engineer Intern at Impact Radius</h1>
 						<p>Spent a year at Impact Radius part time during the academic year, full time over summer 2015-2016.</p>
 						<p>I worked on improving their metrics and monitoring systems as well as internationalization and localization workflow.</p>
-						<h1>Software Engineer Intern at GLENWorld</h1>
+						<h1 class="cyan">Software Engineer Intern at GLENWorld</h1>
 						<p>Developed new features and mini-games for the XPrize Global Learning Competition, part time for a few months during 2015.</p>
-						<h1>Software Engineer Intern at Datapop</h1>
+						<h1 class="cyan">Software Engineer Intern at Datapop</h1>
 						<p>Worked on internal tooling to optimize company workflow and to resolve conflicts across taxonomies, during summer of 2013 and 2014.</p>
 					</section>
 				</li>
-				
+			</div>
+
+			<div id="research">
 				<!-- Research (Magenta) -->
 				<li class="terminal-line">
-					<div class="more">more </div>about_research.txt
+					more about_research.txt
 					<div class="timestamp"></div>
 					<section class="extra-content">
 						<h1 class="magenta">eHealth Research Lab (UCLA)</h1>
@@ -104,10 +131,12 @@
 						<p>Assisted writing a paper with Prof. Hardekopf and PhD student Miroslav Gavrilov based on this research.</p>
 					</section>
 				</li>
+			</div>
 
+			<div id="projects">
 				<!-- Projects (Yellow) -->
 				<li class="terminal-line">
-					<div class="more">more </div>about_projects.txt
+					more about_projects.txt
 					<div class="timestamp"></div>
 					<section class="extra-content">
 						<h1 class="yellow">GauchoSell</h1>
@@ -115,10 +144,12 @@
 						<p>GauchoSell is an Android mobile app that will allow students to easily sell and bid on items within their own community. This app will include features such as filtering by category or price ranges, monitoring the current bid for each item, allowing sellers and buyers to back out of bids, and many more.</p>
 					</section>
 				</li>
+			</div><!-- end projects -->
 
+			<div id="awards">
 				<!-- Awards (Red) -->
 				<li class="terminal-line">
-					<div class="more">more </div>about_awards_and_activities.txt
+					more about_awards_and_activities.txt
 					<div class="timestamp"></div>
 					<section class="extra-content">
 						<h1 class="red">T32 NIH Training Grant (2018 - 2020) </h1>
@@ -157,43 +188,27 @@
 						<p>In some odd foreshadowing of continuing to graduate school, I created lessons plans as well as coding exercises to teach C++ to club members.</p>
 					</section>
 				</li>
+			</div><!-- end awards -->
 
-				<!-- Downloadables -->
-				<li>
-					<a href="files/DavinaZ_resume.pdf" download="DavinaZ_resume.pdf">
-						<div class="more">wget </div>
-					</a>my_resume.pdf
-					<div class="timestamp"></div>
-				</li>
-				<li>
-					<a href="files/DavinaZ_cv.pdf" download="DavinaZ_cv.pdf">
-						<div class="more">wget </div>
-					</a>my_cv.pdf
-					<div class="timestamp"></div>
-				</li>
-
-				<!-- Credits -->
+			<div id="credits">
 				<li class="terminal-line" id="more-credits">
-					<div class="more">more </div>credits.txt
+					more credits.txt
 					<div class="timestamp"></div>
 					<section class="extra-content">
-						<p><a href="https://nff-themes.tumblr.com/bg">More backgrounds</a> like this.</p>
-						<p>Terminal colors inspired by <a href="https://ethanschoonover.com/solarized/">Solarized theme</a>.</p>
+						<p>Terminal colors inspired by <a href="https://ethanschoonover.com/solarized/">Solarized theme</a>, or <a href="https://draculatheme.com/terminal/">Dracula theme</a> depending on my mood.</p>
+						<p>Background modified from <a href="https://www.satellytes.com/blog/twinkling-night-sky-with-shooting-stars-made-in-svg/">Georgios Kaleadis</a>.</p>
 						<p>Resume designed and built by Davina Zamanzadeh with XeLaTeX.</p>
 						<p>CV design by <a href="https://www.sharelatex.com/templates/cv-or-resume/professional-cv">Alessandro Plasmati</a>, which inspired my design.</p>
 						<p>Website designed and built by Davina Zamanzadeh with Stack Overflow.</p>
 					</section>
 				</li>
-
-			</ul>
-		</div>
+			</div><!-- end Credits -->
+		</div><!-- end shell body -->
 	</div> <!-- end terminal -->
-	<footer>
-		<span id="credits">Credits</span>
-	</footer>
 
 	<!--scripts!!-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="main.js"></script>
 </body>
 </html>

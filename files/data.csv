@@ -1,0 +1,12 @@
+﻿Name,Authors,Summary,Conference,Year,Link,Type
+Using autoencoders for imputing missing data in estimated glomerular filtration rate (eGFR) decline trajectories of patients with chronic kidney disease (CKD),"Davina Zamanzadeh, Panayiotis Petousis, ...",,American Society of Nephrology (ASN) Kidney Week,2020,,"Abstract, ePoster"
+"A
+Practical, Principled Measure of Fuzzer Appeal: A Preliminary Study","Miroslav Gavrilov, Kyle Dewey, Alex Groce, Davina Zamanzadeh, Ben Hardekopf",Propose an automated method for comparing fuzzers using a metric called fuzzer appeal.,"IEEE International
+Conference on Software Quality, Reliability, and Security (QRS) ",2020,,Paper
+Domain Adaptation in Children Activity Recognition,"Anahita Hosseini, Davina Zamanzadeh, Lisa Valencia, Rima Habre, Alex Bui, Majid
+Sarrafzadeh","Demonstrates effectiveness of domain adaptation in wireless health. We adapt a predictive
+model from a labeled adult to an unlabeled child activity recognition dataset.","IEEE Engineering in
+Medicine and Biology Conference (EMBC) ",2019,https://ieeexplore.ieee.org/document/8857135,Paper
+Nutrition and Health Data for Cost-Sensitive Learning,"Mohammad Kachuee, Kimmo Kärkkäinen, Orpaz Goldstein, Davina Zamanzadeh, Majid
+Sarrafzadeh","Investigate the performance of cost-sensitive feature acquisition methods currently popular
+in literature on classification tasks for different medical complications.",CoRR abs/1902.07102,2019,https://arxiv.org/abs/1902.07102,Paper
