@@ -65,8 +65,12 @@ body {
 
 /* ------------- TERMINAL ------------- */
 #terminal {
-	height: 80%;
-	width: 50%;
+	/* height: 80%; */
+	/* width: 50%; */
+	/* min-width: 70vw; */
+	min-width: 500px;
+	max-width: 50%;
+	max-height: 70%;
 
 	position: absolute;
 	background-color: var(--bg-light-color);
@@ -74,7 +78,6 @@ body {
 	/* Ref: https://www.w3schools.com/css/css3_shadows.asp */
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
 		0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	overflow-y: scroll;
 	display: flex;
 	flex-flow: column;
 
@@ -88,7 +91,8 @@ body {
 #topbar {
 	background-color: var(--bg-dark-color);
 	/* height: 15px; */
-	border-radius: 5px 5px 0 0; 
+	/* border-radius: 5px 5px 0 0;  */
+	border-radius: 20px 20px 0 0;
 	padding: 5px;
 }
 
@@ -178,6 +182,7 @@ body {
 /* ****** Stuff below navbar ****** */
 #shell-body {
 	padding: 10px 10px 10px 5px;
+	overflow-y: scroll;
 }
 
 li, p {
@@ -318,7 +323,7 @@ h1 {
 }
 
 #svgCanvas {
-  height: 150vh;
+  height: 100vh;
 }
 
 

@@ -6,10 +6,13 @@ var main = function () {
 		$('#shell-body').find('#' + $(this).attr('name')).addClass('active-content');
 	});
 
-	$('.resizable').resizable({
-		minWidth: 420, 
-		minHeight: 60
-	});
+	$('.resizable').resizable();
+ 
+  var i = $("#tabs").find('*').length;
+  $('#tabs').find('*').each(function () {
+    $(this).css('z-index', i);
+    i--;
+  });
 };
 
 $(document).ready(main);
@@ -59,8 +62,10 @@ createNightSky({container: starGroup, data: STAR_DATA});
 function makeNewPosition(){
     
     // Get viewport dimensions (remove the dimension of the div)
-    var h = $(window).height() - 50;
-    var w = $(window).width() - 50;
+    // var h = $(window).height() - 50;
+    // var w = $(window).width() - 50;
+    var h = screen.height - 50;
+    var w = screen.width - 50;
     
     var nh = Math.floor(Math.random() * h);
     var nw = Math.floor(Math.random() * w);
@@ -71,5 +76,5 @@ function makeNewPosition(){
 
 // this is here to make the actual code more accessible- will be avaialble at the top through hoisting
 function generateStarData() {
-  return Array(500).fill().map(() => makeNewPosition());
+  return Array(800).fill().map(() => makeNewPosition());
 };
