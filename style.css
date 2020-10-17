@@ -182,6 +182,7 @@ body {
 /* ****** Stuff below navbar ****** */
 #shell-body {
 	padding: 10px 10px 10px 5px;
+	margin: 5px;
 	overflow-y: scroll;
 }
 
